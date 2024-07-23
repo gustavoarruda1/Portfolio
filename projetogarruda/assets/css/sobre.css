@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+div.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(28, 28, 31);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sidebar div.img {
+    text-align: center;
+}
+
+div.sidebar div.img img {
+    width: 80%;
+    border-radius: 50%;
+    animation-name: borda;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes borda {
+    0% {
+        border: 12px solid black;
+    }
+
+    50% {
+        border: 12px solid rgb(26, 25, 25);
+    }
+
+    100% {
+        border: 12px solid rgb(47, 47, 49);
+    }
+
+}
+
+div.sidebar-pos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.menu {
+    margin: 20px 0;
+}
+
+div.menu a {
+    text-decoration: none;
+    color: rgb(216, 206, 206);
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+div.menu a:hover {
+    color: white;
+}
+
+div.container {
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 20%;
+    padding: 0 3%;
+}
+
+section.descricao {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.descricao h2 {
+    color: white;
+    font-family: 'Passion One', sans-serif;
+    font-size: 47px;
+}
+
+section.descricao h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: rgb(216, 206, 206);
+    margin: 15px 0;
+}
+
+section.descricao p {
+    color: rgb(216, 206, 206);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
